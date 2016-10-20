@@ -30,7 +30,7 @@ namespace SsisFtpSource
 
         public FtpHelper()
         { 
-        
+            
         }
 
         public void Connect(string userName, string password, string hostName)
@@ -53,7 +53,6 @@ namespace SsisFtpSource
 
             try
             {
-                //url = "";
                 FtpWebRequest ftpclientRequest = WebRequest.Create(url) as FtpWebRequest;
                 ftpclientRequest.Credentials = new NetworkCredential(_userName, _password);
                 ftpclientRequest.Method = WebRequestMethods.Ftp.ListDirectoryDetails;
@@ -74,31 +73,5 @@ namespace SsisFtpSource
 
             
         }
-
-        //public Stream Get(string remotePath)
-        //{
-        //    FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://ftp.matchit.no//Usr/C10658/Bounce/ftp_get_01.txt");
-        //    request.Method = WebRequestMethods.Ftp.DownloadFile;
-
-        //    // This example assumes the FTP site uses anonymous logon.
-        //    request.Credentials = new NetworkCredential("C10658", "CuSvux1i");
-
-
-
-        //    FtpWebResponse response = (FtpWebResponse)request.GetResponse();
-
-        //    Stream responseStream = response.GetResponseStream();
-        //    StreamReader reader = new StreamReader(responseStream);
-        //    Console.WriteLine(reader.ReadToEnd());
-
-        //    Console.WriteLine("Download Complete, status {0}", response.StatusDescription);
-
-        //    Console.ReadLine();
-
-        //    reader.Close();
-        //    response.Close();
-        //}
-
-        
     }
 }

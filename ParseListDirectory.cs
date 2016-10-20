@@ -7,6 +7,19 @@ using System.Text.RegularExpressions;
 
 namespace SsisFtpSource
 {
+    public class CustomDataColumn
+    {
+        public string Name = "";
+        public string Type = "";
+        public string Length = "";
+
+        public CustomDataColumn(string name, string type, string length)
+        {
+            Name = name;
+            Type = type;
+            Length = length;
+        }
+    }
 
     public struct FileStruct
     {
@@ -24,11 +37,8 @@ namespace SsisFtpSource
         Unknown
     }
 
-
     public class ParseListDirectory
     {
-
-
         public FileStruct[] GetList(string datastring)
         {
             List<FileStruct> myListArray = new List<FileStruct>();
