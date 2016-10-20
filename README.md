@@ -16,8 +16,10 @@ Separator | Column separator (,)
 Not older files | Number of days back
 Column Definition | Spesification of columns and data types
 
+![alt tag](https://github.com/skobba/SsisFtpSource/blob/master/ColumnDefinition.PNG)
+
 ## Usage
-TODO
+![alt tag](https://github.com/skobba/SsisFtpSource/blob/master/Dataflow.png)
 
 ## Debug
 TODO
