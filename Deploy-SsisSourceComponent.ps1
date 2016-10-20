@@ -22,4 +22,4 @@ cp $ftpSourceFilePath $remoteServerPath
 
 #Open project in VS - After copying files open your test-project
 $devenv = "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
-Invoke-Expression  "C:\Github\SsisFtpSource\SsisFtpSource_Test.sln"
+Invoke-Expression  "C:\Github\SsisFtpSource\SsisFtpSource_Test\SsisFtpSource_Test.sln"

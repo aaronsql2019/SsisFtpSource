@@ -61,7 +61,7 @@
     <EmbeddedResource Include="key.snk" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ftp.ico" />
+    <EmbeddedResource Include="ftp.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Deploy-SsisSourceComponent.ps1" />
